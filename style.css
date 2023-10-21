@@ -1,0 +1,103 @@
+/* Define the color scheme */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #3e8e41;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+  }
+  
+  /* Set the background color and text color for the body */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Center the title and add some margin */
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  /* Style the links */
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Style the forms */
+  form {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    max-width: 600px;
+  }
+  
+  input[type="text"], input[type="date"] {
+    padding: 8px;
+    margin: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  input[type="submit"]:active {
+    background-color: var(--secondary-color);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Add some icons */
+  .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('icon.png');
+    background-size: cover;
+    margin-right: 8px;
+  }
