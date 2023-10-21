@@ -3,7 +3,6 @@ include 'database.php';
 
 $teachers = getTeachers();
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +18,7 @@ $teachers = getTeachers();
       <th>Hour</th>
       <th>Date</th>
       <th>Actions</th>
+      <th>Details</th>
     </tr>
     <?php
     if ($teachers != NULL) {
@@ -31,6 +31,9 @@ $teachers = getTeachers();
         echo "<td>";
         echo "<a href='edit.php?id=" . $teacher['id'] . "'>Edit</a> ";
         echo "<a href='delete.php?id=" . $teacher['id'] . "'>Delete</a>";
+        echo "</td>";
+        echo "<td>";
+        echo "<a href='read.php?id=" . $teacher['id'] . "'>Details</a>";
         echo "</td>";
         echo "</tr>";
       }
